@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif; 
+    font-size: 20px;
+    color: #000;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+p {
+    font-size: 16px;
+}
+
+nav, footer {
+  background-color: #aaa;
+}
+
+nav {
+    display: inline-flex;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+#nav-bar-items {
+    display: inline-flex;
+    width: 300px;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+.nav-bar-item {
+    margin: 20px 20px;
+    line-height: 30px; 
+}
+
+header {
+    padding: 10% 0;
+}
+
+main {
+    width: 280px;
+    margin: 0 auto;
+}
+
+.project-imgs {
+}
+
+.project-links {
+    margin-right: 20px;
+}
+
+.project-link {
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+footer {
+    padding: 40px 0;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 420px) {
+    main {
+        width: 380px; 
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    nav {
+        justify-content: space-evenly;
+        padding: 0px;
+    }
+
+    #nav-bar-items {
+        display: inline-flex;
+        justify-content: space-evenly;
+        list-style: none;
+        padding: 0px;
+    }
+
+    main {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 770px) {
+    main {
+        width: 700px;
+    }
+}
