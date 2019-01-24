@@ -5,35 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Preston Arnette | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth:400|Montserrat" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
 </head>
 <body>
-    <nav role="navigation">
-        <h2 id="title" class="nav-bar-item">Nav</h2>
+    <nav role="navigation" class="nav-bar-default">
+        <h2 id="title" class="nav-bar-item">Preston</h2>
         <ul id="nav-bar-items">
-            <a href=""><li class="nav-bar-item">About</li></a>
-            <a href=""><li class="nav-bar-item">Projects</li></a>
-            <a href=""><li class="nav-bar-item">Contact</li></a>
+            <li class="nav-bar-item"><a href="#about">About</a></li>
+            <li class="nav-bar-item"><a href="#project">Project</a></li>
+           <li class="nav-bar-item"> <a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <main role="main">
-        <header role="heading">
-            <h2>Hero</h2>
-            <p>Hi, I'm Preston. I'm a student developer & design enthusiast. My skills include HTML, CSS & JavaScript.</p>
-            <p>I am a prospective web developer and student of the Full Stack Flex course at Thinkful. I love programming because I have a passion for designing, learning, problem-solving, and success. However strange, the challenge programming presents puts a smile on my face. I'm constantly susprised at how excited I am about programming.</p>
+        <header role="heading" id="about">
+            <p>Hi, I'm <span class="important">Preston Arnette</span>. I'm a student developer & design enthusiast.</p> 
+            <p>My skills include <span class="important">HTML, CSS & JavaScript.</span></p>
+            <p>I am a prospective <span class="important">web developer</span> and student of the Full Stack Flex course at Thinkful. I love programming because I have a passion for <span class="important">designing, learning, problem-solving, and success.</span> The challenge programming presents puts a smile on my face. I'm constantly susprised at how excited I am about programming.</p>
             <p>Outside of programming, my interests include technology, games, ttrpgs, musicianship, art, and the pursiut of learning. I love learning.</p>
         </header>
 
-        <section role="presentation">
+        <section role="presentation" id="project">
 
             <div class="project-imgs">
-                <!-- <img class="project-img"> -->
-                <h3>Quiz App</h3>
+                <img class="project-img" src="https://i.imgur.com/O87wuyS.png" alt="Quiz App">
+                <h3 class="project-title">Quiz App</h3>
             </div>
 
-            <div class="project-technologies">
+            <div class="project-techs">
                 <p>HTML, CSS, JavaScript and jQuery.</p>
             </div>
 
@@ -43,32 +45,21 @@
             </div>
 
             <p class="project-desc">A web page that renders a quiz about space. Users can answer the questions and recieve feedback on thier progress and correctness. Users can also restart the quiz at the end.</p>
-            
+            <div class="clear"></div>
         </section>
 
-        <section role="presentation">
-
-                <div class="project-imgs">
-                    <!-- <img class="project-img"> -->
-                    <h3>Project 2</h3>
-                </div>
-    
-                <div class="project-technologies">
-                    <p>Project 2 technologies</p>
-                </div>
-    
-                <div class="project-links">
-                    <a href="" target="_blank" class="project-link">Live</a><br>
-                    <a href="" target="_blank" class="project-link">Github</a>
-                </div>
-    
-                <p class="project-desc">Project 2 description</p>
-                
-            </section>
     </main>
 
-    <footer>
-
+    <footer role="contentinfo" id="contact">
+        <address>
+            <ul class="contact-icons">
+                <li><a href="https://github.com/Prae-torius" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+                    <li><a href="https://github.com/Prae-torius" target="_blank"><ion-icon name="mail"></ion-icon></a></li>
+            </ul>
+        </address>
     </footer>
+    
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+
 </body>
 </html>
