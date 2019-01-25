@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FFFFFF;
     font-family: "Montserrat", sans-serif; 
@@ -79,15 +83,7 @@ main {
 }
 
 .project-title {
-    position: absolute;
-    bottom: 1%;
-    left: 0;
-    margin: 0;
-    padding: 12px;
-    width: 100%;   
-    background-color: rgba(255, 255, 255, 0.7);
-    line-height: 1;
-    font-size: 24px;
+    margin-top: 0;
 }
 
 .project-techs {
@@ -176,14 +172,14 @@ a:hover {
     }
 }
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 800px) {
     main {
-        width: 700px;
+        width: 50%;
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1300px) {
     main {
-        width: 900px;
+        width: 38%;
     }
 }
