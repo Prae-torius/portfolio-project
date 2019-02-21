@@ -1,65 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Preston Arnette | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Amaranth:400|Montserrat" rel="stylesheet">
-    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Preston Arnette | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Amaranth:400|Montserrat" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
 </head>
 <body>
+  <header role="banner">
+    <h1 id="title" class="nav-bar-item">Preston</h1>
+    
     <nav role="navigation" class="nav-bar-default">
-        <h2 id="title" class="nav-bar-item">Preston</h2>
-        <ul id="nav-bar-items">
-            <li class="nav-bar-item"><a href="#about">About</a></li>
-            <li class="nav-bar-item"><a href="#projects">Projects</a></li>
-           <li class="nav-bar-item"> <a href="#contact">Contact</a></li>
-        </ul>
+      <ul id="nav-bar-items">
+        <li class="nav-bar-item"><a href="#about">About</a></li>
+        <li class="nav-bar-item"><a href="#proj-1">Projects</a></li>
+        <li class="nav-bar-item"> <a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-
-    <main role="main">
-        <header role="heading" id="about">
-            <p>Hi, I'm <span class="important">Preston Arnette</span>. I'm a student developer & design enthusiast.</p> 
-            <p>My skills include <span class="important">HTML, CSS & JavaScript.</span></p>
-            <p>I am a prospective <span class="important">web developer</span> and student of the Full Stack Flex course at Thinkful. I love programming because I have a passion for <span class="important">designing, learning, problem-solving, and success.</span> The challenge programming presents puts a smile on my face. I'm constantly susprised at how excited I am about programming.</p>
-            <p>Outside of programming, my interests include technology, games, ttrpgs, musicianship, art, and the pursiut of learning. I love learning.</p>
-        </header>
-
-        <section role="presentation" id="projects">
-
-            <div class="project-imgs">
-                <img class="project-img" src="https://i.imgur.com/O87wuyS.png" alt="Quiz App">
-            </div>
+  </header>
+  
+  <main role="main">
     
-            <h3 class="project-title">Quiz App</h3>
+    <section role="heading" id="about">
+      <h2 id="about-header">About Me</h2>
+      <p>Hi, I'm <span class="important">Preston Arnette</span>, I'm a student developer & design enthusiast.</p> 
+      <p>My skills include <span class="important">HTML, CSS & JavaScript.</span></p>
+      <p>I am a prospective <span class="important">web developer</span> and student of the Full Stack Flex course at Thinkful. I love programming because I have a passion for <span class="important">designing, learning, problem-solving, and success.</span> The challenge programming presents puts a smile on my face. I'm constantly susprised at how excited I am about programming.</p>
+      <p>Outside of programming, my interests include technology, games, ttrpgs, musicianship, art, and the pursiut of learning. I love learning.</p>
+    </section>
 
-            <div class="project-techs">
-                <p>HTML, CSS, JavaScript and jQuery.</p>
-            </div>
+    <section role="presentation" id="proj-1" class="projects">
 
-            <div class="project-links">
-                <a href="https://prae-torius.github.io/quiz-app/" target="_blank" class="project-link">Live</a><br>
-                <a href="https://github.com/Prae-torius/quiz-app" target="_blank" class="project-link">Github</a>
-            </div>
+      <div class="project-imgs">
+        <img class="project-img" src="https://i.imgur.com/O87wuyS.png" alt="Quiz App">
+      </div>
 
-            <p class="project-desc">A web page that renders a quiz about space. Users can answer the questions and recieve feedback on thier progress and correctness. Users can also restart the quiz at the end.</p>
-            <div class="clear"></div>
-        </section>
+      <h3 class="project-title">Quiz App</h3>
 
-    </main>
+      <div class="project-techs">
+        <p>HTML, CSS, JavaScript and jQuery.</p>
+      </div>
 
-    <footer role="contentinfo" id="contact">
-        <address>
-            <ul class="contact-icons">
-                <li><a href="https://github.com/Prae-torius" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                    <li><a href="mailto:arnettepreston@gmail.com"><ion-icon name="mail"></ion-icon></a></li>
-            </ul>
-        </address>
-    </footer>
-    
-    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+      <div class="project-links">
+        <a href="https://prae-torius.github.io/quiz-app/" target="_blank" class="project-link">Live</a><br>
+        <a href="https://github.com/Prae-torius/quiz-app" target="_blank" class="project-link">Github</a>
+      </div>
 
+      <p class="project-desc">A web page that renders a quiz about space. Users can answer the questions and recieve feedback on thier progress and correctness. Users can also restart the quiz at the end.</p>
+      <div class="clear"></div>
+    </section>
+
+    <section role="presentation" id="proj-2" class="projects">
+
+      <div class="project-imgs">
+        <img class="project-img" src="https://i.imgur.com/hYyHI5V.jpg" alt="Quiz App">
+      </div>
+  
+      <h3 class="project-title">Lyric-Viewer</h3>
+  
+      <div class="project-techs">
+        <p>HTML, CSS, JavaScript and jQuery.</p>
+      </div>
+  
+      <div class="project-links">
+        <a href="https://prae-torius.github.io/lyric-viewer/" target="_blank" class="project-link">Live</a><br>
+        <a href="https://github.com/Prae-torius/lyric-viewer" target="_blank" class="project-link">Github</a>
+      </div>
+  
+      <p class="project-desc">Users search for a song and lyrics by inputting a song title and artist name, then they can listen and follow along with the lyrics.</p>
+      <div class="clear"></div>
+    </section>
+  </main>
+
+  <footer role="contentinfo" id="contact">
+    <address>
+      <ul class="contact-icons">
+        <li><a href="https://github.com/Prae-torius" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a href="mailto:arnettepreston@gmail.com"><ion-icon name="mail"></ion-icon></a></li>
+      </ul>
+    </address>
+  </footer>
+  <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 </body>
 </html>

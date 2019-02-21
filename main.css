@@ -1,3 +1,4 @@
+/* document styling */
 * {
     box-sizing: border-box;
 }
@@ -15,7 +16,7 @@ body {
     margin: 0;
   }
 
-nav, footer {
+header, footer {
     background-color: #FFFFFF;  
 }
 
@@ -28,15 +29,28 @@ a {
     color: #104C6C;
 }
 
+a:hover {
+    color: #D41425;
+    transition: color .3s ease;
+}
+
 p {
     font-size: 16px;
+}
+
+.important {
+    color: #D41425;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 24px;
 }
 
 .clear {
     clear: both;
 }
 
-nav {
+/* header styling */
+
+header {
     display: block;
     border-bottom: 1px solid #104C6C;
     position: fixed;
@@ -44,6 +58,11 @@ nav {
     left: 0;
     right: 0;
     z-index: 10;
+    margin: 0;
+}
+
+#title {
+    display: inline-block;
 }
 
 nav > * {   
@@ -61,15 +80,17 @@ nav > * {
     line-height: 30px; 
 }
 
-header {
-    padding: 100px 0 120px 0;
-    margin-top: 220px;
-    border-bottom: 1px solid #104C6C;
-}
+/* main styling */
 
 main {
     width: 280px;
     margin: 0 auto;
+}
+
+#about {
+    padding: 100px 0 120px 0;
+    margin-top: 180px;
+    border-bottom: 1px solid #104C6C;
 }
 
 .project-imgs {
@@ -103,10 +124,16 @@ main {
     margin-right: 20px;
 }
 
-section {
+.projects {
     padding: 120px 0;
     margin: 0;  
 }
+
+#proj-1 {
+    border-bottom: 1px solid #104C6C;
+}
+
+/* footer styling */
 
 footer {
     font-size: 30px;
@@ -130,17 +157,7 @@ address {
     margin: 20px 30px;
 }
 
-.important {
-    color: #D41425;
-    font-family: 'Amaranth', sans-serif;
-    font-size: 24px;
-}
-
-a:hover {
-    color: #D41425;
-    transition: color .3s ease;
-}
-
+/* media quieries */
 
 @media only screen and (min-width: 420px) {
     main {
@@ -149,7 +166,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 600px) {
-    nav {
+    header {
         display: inline-flex;
         justify-content: space-evenly;
         padding: 0px;
@@ -163,7 +180,7 @@ a:hover {
         margin: 0;
     }
 
-    header {
+    #about {
         margin-top: 70px;
     }
 
